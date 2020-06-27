@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animejim official membership</title>
+    
+    <script>
+
+        
+
+        function getvalue() {
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var result = document.getElementById('result');
+
+            console.log(result);
+            result.innerHTML = "Successfully registered "+name.value +" and "+email.value;
+        }
+
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+    
+            color: lightcoral;
+            
+            padding: 30px;
+
+            background-image: jh.jpeg;
+
+         
+            
+
+
+        }
+
+
+
+        /* Header Section */
+        header {
+            width: 100%;
+            background-color: lightskyblue;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+
+        header a {
+            text-decoration: none;
+            margin-right: 100px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: darkslategrey;
+            font-family: tahoma;
+        }
+
+        /* Header End */
+
+        /* Banner Section */
+        .banner-container {
+            display: flex;
+            margin-top: 100px;
+            width: 100%;
+            height: 100vh;
+            background-color: royalblue;
+
+
+        }
+
+        .banner-container .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        /* Banner End */
+
+
+
+
+
+
+        /* left Section */
+        .left-section h1 {
+            margin: 0px;
+            color: whitesmoke;
+        }
+
+        .left-section p {
+            color: wheat;
+        }
+
+        .left-section button {
+            background-color: whitesmoke;
+            border: none;
+            padding: 12px 50px;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+
+        /* left End */
+        /* right section */
+        .right-section h4 {
+            font-size: 23px;
+            color: lightcoral;
+        }
+
+        .right-section {
+            width: 400px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 6px black;
+        }
+
+        .right-section h4 {
+            font-size: 20px;
+            width: 300px;
+            margin: auto;
+            margin-bottom: 30px;
+            color: royalblue;
+            text-shadow: 1px 1px 3px silver;
+            
+        }
+
+        .input-group {
+            width: 300px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+        /* right End */
+        .input-group input {
+
+            padding: 7px;
+
+
+        }
+
+        input {
+            border-radius: 50;
+        }
+
+        .submit-button {
+            background-color: cornflowerblue;
+            color: white;
+            border: none;
+            padding: 10px 0;
+            margin-top: 15px;
+            border-radius: 5px;
+            width: 300px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            box-shadow: 0 3px 6px silver;
+        }
+
+
+
+
+        /*Developer Section*/
+        .developer{
+            text-align: center;
+            background-color: rgba(255, 236, 153, 0.986);
+            color: rgb(23, 1, 41);
+            height: 250px;
+            background-image: linear-gradient(to right, rgb(0, 253, 219), rgba(255,0,0,1));
+            border-radius: 39px;
+}
+  
+        }
+        .developer marquee{
+            background-color: rgb(234, 255, 202);
+           
+            color: darkblue;
+            font-size: 80px;
+            box-shadow: 7px 16px 8px 10px hotpink;
+        }
+
+
+        /*Developer End*/
+
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="container">
+            <a href="#">Logo</a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+    <main>
+
+
+
+        <div class="banner-container">
+            <div class="container">
+
+                <div class="left-section">
+
+                    <h1>Welcome to AnimeJim Membership</h1>
+                    <p> In this website you can be one of our official animator .<br>
+                        It is easy just type your name, email and password. Actually <br>
+                        password is optional so just type your name and email only. <br>
+                        <b>And if you are using mobile please enable desktop site mode.</b> <br></p>
+
+
+
+                    <button>Login</button>
+
+
+                </div>
+                <div class="right-section">
+                    <p id="result"></p>
+                    <h4>Please fill this form to get membership</h4>
+
+                    <div class="input-group">
+                        <input type="text" id="name">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password">
+                        <label for="password">Password</label>
+                    </div>
+
+
+                    <div class="submit-section">
+                        <button class="submit-button" onclick="getvalue()">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="developer">
+
+         <h6>special thanks to Femida</h6>
+         <h6>special thanks to Ajisha</h6>
+         <h6>special thanks to Rahlana Lathif(Doctor)</h6>
+         <h6>special thanks to Junaid Babu (Sony)</h6>
+         <h6>special thanks to Visual Studio code</h6>
+         <h6>special thanks to Google Chrome</h6>
+
+
+
+<marquee scrollamount=15 direction="left"><b>Subscribe To My Channel AnimeJim</b></marquee>
+         <h4 title="Chief Developer Of AnimeJim And This Website." style="color: rgb(2, 3, 0);">Developed By GamerPopcornJasuJaseem</h4>
+        
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      
+    </main>
+</body>
+
+</html>
